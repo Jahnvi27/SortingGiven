@@ -1,0 +1,3 @@
+langugae: java
+install: gradle assemble
+scrpit: gradle check
