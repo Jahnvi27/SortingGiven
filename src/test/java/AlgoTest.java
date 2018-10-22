@@ -13,7 +13,7 @@ public class AlgoTest {
 	    //The elements are in descending order. It will cover all the test sequences
 		//Node Coverage Edge Coverage Condition Coverage for the Bubble Sort method
 		@Test 
-		public void verifyDescSort() {
+		public void verifyDescBubbleSort() {
 			numbers = new Item[6];
 			sortedNumbers =  new Item[6];
 			numbers[0]= new Item(100);
@@ -35,10 +35,6 @@ public class AlgoTest {
 			assertEquals(numbers[3].key,sortedNumbers[3].key);
 			assertEquals(numbers[4].key,sortedNumbers[4].key);
 			assertEquals(numbers[5].key,sortedNumbers[5].key);
-			SortAlgos.quickSort(numbers);
-			SortAlgos.insertionSort(numbers);
-			SortAlgos.mergeSort(numbers);
-			SortAlgos.heapSort(numbers);
 			
 		}
 		
